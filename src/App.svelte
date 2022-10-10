@@ -1,33 +1,20 @@
+<!-- this is the begining of the react svelte.
+you need to have in each file.svelte a <script></script> <main></main> and <style></style>
+<script></script> contains the js that you want to run if you want to use dynamic elements or functionalities
+<main></main> should display any html elements you would want on your web application or contains the components you made 
+<style></style> basically is having a section of css within the file.svelte without navigating to the CSS.file all the time so you can style it on the fly -->
+
+
 <script>
-  import devLogo from './assets/dev-logo.svg'
-  import Counter from './lib/Counter.svelte'
+  import NavBar from "./Comps/NavBar.svelte";
 </script>
 
-<main>
-  <div>
-    <a href="https://acmcsuf.com" target="_blank"> 
-      <img src={devLogo} class="logo dev" alt="Svelte Logo" />
-    </a>
-  </div>
-  <h1>Svelte Website Template</h1>
 
-  <div class="card">
-    <Counter />
-  </div>
+<main>
+  <NavBar/>
+  
 </main>
 
 <style>
-  .logo {
-    height: em;
-    padding: 1.5em;
-    will-change: filter;
-  }
   
-  .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-
-  .logo.dev:hover {
-    filter: drop-shadow(0 0 2em #1E6CFF);
-  }
 </style>
